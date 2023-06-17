@@ -1,0 +1,251 @@
+/* Download our apps section */
+.downloadMainTitle {
+  max-width: 492px;
+  margin: 0;
+  margin-bottom: 48px;
+}
+
+.cardDownloadContainer {
+  display: flex;
+  overflow: auto;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.eachDownloadCont {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+  flex-basis: 33.33%;
+  cursor: pointer;
+}
+.appLogo {
+  border-radius: 16px;
+}
+.descContainer {
+  width: 100%;
+  margin: auto;
+}
+.descAppName {
+  letter-spacing: -0.01em;
+  color: #000000;
+}
+.descDesc {
+  width: 100%;
+  letter-spacing: -0.01em;
+  color: #000000;
+  opacity: 0.64;
+}
+.descHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Making a difference section starts here */
+
+.mad-grid-container {
+  width: calc(100% - 48px);
+  margin-left: 24px;
+  display: grid;
+  row-gap: 16px;
+  column-gap: 16px;
+  align-content: space-evenly;
+  justify-content: space-evenly;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto 40% 40%;
+  grid-template-areas:
+    "a a b c"
+    "d d f f"
+    "e e f f";
+}
+.mad-grid-container img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+.mad-grid-container > * {
+  width: 100%;
+  overflow: hidden;
+}
+.grid-item-a {
+  grid-area: a;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  color: #5c5c5c;
+}
+.grid-item-b {
+  grid-area: b;
+}
+.grid-item-c {
+  grid-area: c;
+}
+.grid-item-b > p,
+.grid-item-c > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #212026;
+  opacity: 0.64;
+  letter-spacing: -0.01em;
+  max-width: 10rem;
+}
+.grid-item-b > h3,
+.grid-item-c > h3 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #000000;
+}
+.grid-item-d {
+  grid-area: d;
+}
+.grid-item-e {
+  grid-area: e;
+}
+.grid-item-f {
+  grid-area: f;
+}
+.making-diff-mar {
+  margin-bottom: 16px;
+}
+
+@media only screen and (min-width:1025px) {
+  .grid-item-a {
+    margin-bottom: 16px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .mad-grid-container {
+    width: calc(100% - 48px);
+    margin: 16px 24px;
+    grid-template-rows: auto;
+  }
+  .descAppName {
+    line-height: 24px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .mad-grid-container {
+    row-gap: 12px;
+    column-gap: 14px;
+    grid-template-columns: 25% 25% 25% 24.5%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .mad-grid-container {
+    row-gap: 0;
+  }
+}
+
+
+@media only screen and (max-width: 698px) {
+  .mad-grid-container {
+    width: 100%;
+    margin: 0;
+    grid-template-columns: 49% 49%;
+    grid-template-rows: auto 200px 260px auto;
+    grid-template-areas:
+      "a a"
+      "d e"
+      "f f"
+      "b c";
+  }
+  .grid-item-f {
+    width: 100%;
+    height: 100%;
+  }
+  .grid-item-d {
+    height: 100%;
+  }
+  .grid-item-e {
+    height: 100%;
+  }
+  .mobile-font {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 454px) {
+  .mad-grid-container {
+    width: 100%;
+    margin: 0;
+    grid-template-columns: 47% 47%;
+    row-gap: 16px;
+    column-gap: 16px;
+    grid-template-rows: auto 160px 200px auto;
+  }
+}
+
+.moreLink {
+  position: relative;
+  top: 24px;
+}
+.moreLink > img {
+  padding-left: 16px;
+}
+.top-10 {
+  top: 10px;
+}
+.oppRotate {
+  cursor: pointer;
+  width: 24px;
+  height: 16px;
+}
+/* Popup styles */
+
+.popup-header {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+  margin-bottom: 8px;
+}
+.popup-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.01em;
+  color: #000000;
+  opacity: 0.64;
+  margin-bottom: 40px;
+}
+.black-cont-download {
+  display: flex;
+  gap: 24px;
+}
+.black-box-download {
+  background: #000000;
+  display: flex;
+  border-radius: 5px;
+  padding: 4px 8px;
+  height: 40px;
+  width: 134px;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 992px) {
+  .eachDownloadCont {
+    flex-direction: row;
+    align-items: center;
+    height: 120px;
+    padding: 16px;
+    width: 100%;
+    margin: 8px auto;
+    gap: 16px;
+  }
+  .cardDownloadContainer {
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+  }
+  .oppRotate {
+    width: 15px;
+    height: 10px;
+  }
+}

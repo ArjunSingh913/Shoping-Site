@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./BootStrap/css/bootstrap.min.css">
+    <script src="./BootStrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+ 
+    <nav class="navbar navbar-expand-lg background">
+        <div class="container-fluid">
+         
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <img src="images/menu.png" alt="Bootstrap" width="30" height="35" style="margin-left: 5rem;">
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html" style="color: white;margin-left: 2rem; ">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="SignUp.html" style="color:white;">SignUp</a>
+              </li>
+              
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+    
+      <div class="container">
+      <div>
+        <div style="text-align: center;">
+        <img src="images/lock.png" class="nav-item" alt="..." width="50px"height="50px">              
+      </div>
+      <div style="text-align: center;color: black;font-size: xx-large;">Sign In</div>
+       <form action="login" method="post">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" name="email"  >
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      
+        <label for="exampleInputPassword1" class="form-label"  >Password</label>
+        <input type="password" class="form-control" name="password" id="exampleInputPassword1">
+      
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" >
+        <label class="form-check-label" for="exampleCheck1">Remember me</label>
+      </div>
+      <div class="d-grid gap-2 col-15 mx-auto">
+      <button type="submit" class="btn btn-primary">Login</button>
+    </div>
+    <ul class="links">
+      <li>
+        <a  href="Login.html">
+          Forgot Password</a>
+      </li>
+    <li>
+      <a  href="SignUp.html">
+        Don't have an account? Sign Up</a>
+    </li>
+     
+    </ul>
+    </div>
+  </div>
+    </form>
+
+  </body>
+  
+</html>

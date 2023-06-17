@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Gentona';
+  src: url("../fonts/Gentona-Book.eot");
+  src: url("../fonts/Gentona-Book.woff") format("woff"), url("../fonts/Gentona-Book.otf"), url("../fonts/Gentona-Book.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Gentona';
+  src: url("../fonts/Gentona-Medium.eot");
+  src: url("../fonts/Gentona-Medium.woff") format("woff"), url("../fonts/Gentona-Medium.otf"), url("../fonts/Gentona-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Gentona';
+  src: url("../fonts/Gentona-Light.eot");
+  src: url("../fonts/Gentona-Light.woff") format("woff"), url("../fonts/Gentona-Light.otf"), url("../fonts/Gentona-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Gentona';
+  src: url("../fonts/Gentona-SemiBold.eot");
+  src: url("../fonts/Gentona-SemiBold.woff") format("woff"), url("../fonts/Gentona-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
